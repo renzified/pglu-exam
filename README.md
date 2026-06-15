@@ -69,8 +69,9 @@ Simple web application for the **Legislative Tracking and Monitoring Unit** to a
 - Data is **per origin, per browser profile** (same machine + browser as specified for `localStorage`); it is **not** synced across devices or users.
 - **Storage quota** applies (typically on the order of a few megabytes per origin).
 - The home page is a **client-side** module: the server render does not read `localStorage`; the list appears after the client loads.
-- **`list` pagination**: the repository returns only the requested slice, but `localStorage` still **reads and parses the full JSON blob** each time true partial file reads are not possible; a database backend can use real offset.
+- **`list` pagination**: the repository returns only the requested slice, but `localStorage` still **reads and parses the full JSON blob** each time; true partial file reads are not possible; a database backend can use real offset.
 - **No authentication** or audit trail or roles; suitable only for local/demo or controlled intranet use unless extended.
+- **Not optmized for SEO** contents are not searchable on search engines because data cannot be server rendered because of the required source of data.
 
 ## Project structure (high level)
 
