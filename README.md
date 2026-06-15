@@ -72,6 +72,7 @@ Simple web application for the **Legislative Tracking and Monitoring Unit** to a
 - **`list` pagination**: the repository returns only the requested slice, but `localStorage` still **reads and parses the full JSON blob** each time; true partial file reads are not possible; a database backend can use real offset.
 - **No authentication** or audit trail or roles; suitable only for local/demo or controlled intranet use unless extended.
 - **Bad SEO** contents are not searchable on search engines because data cannot be server rendered because of the required source of data.
+- **No unit testing** features are manually tested unless a teste suite is implemented.
 
 ## Project structure (high level)
 
